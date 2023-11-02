@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 /* eslint-disable no-restricted-syntax */
 import readlineSync from "readline-sync";
+import myName from '../src/cli.js';
 
 console.log("Welcome to the Brain Games!");
-
-const myName = readlineSync.question("May I have your name? ");
-console.log(`Hello, ${myName}!`);
+myName();
 
 console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
 
