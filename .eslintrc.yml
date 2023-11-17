@@ -12,4 +12,5 @@ rules:
     - error
     - ignorePackages
     - js: always
-  no-restricted-syntax: 0
+  no-restricted-syntax: 0,
+  no-unused-expressions: 0
