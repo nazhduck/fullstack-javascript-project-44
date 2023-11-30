@@ -23,11 +23,9 @@ const answerQuestion = () => {
   const secondNum = random();
 
   const question = `${firstNum} ${sign} ${secondNum}`;
-  const correctAnswer = String(calcNumbers(sign, firstNum, secondNum));
+  const correctAnswer = calcNumbers(sign, firstNum, secondNum);
 
   return [question, correctAnswer];
 };
 
-export default () => {
-  start(log, answerQuestion);
-};
+export default () => start(log, answerQuestion);

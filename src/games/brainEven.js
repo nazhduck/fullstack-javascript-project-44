@@ -10,6 +10,4 @@ const answerQuestion = () => {
   return [question, correctAnswer];
 };
 
-export default () => {
-  start(log, answerQuestion);
-};
+export default () => start(log, answerQuestion);
