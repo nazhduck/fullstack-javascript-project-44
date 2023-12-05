@@ -9,7 +9,7 @@ export default (log, answerQuestion) => {
 
   for (let i = 0; i < 3; i += 1) {
     const [question, correctAnswer] = answerQuestion();
-    console.log(`Question ${question}`);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question("Your answer: ");
     if (userAnswer === correctAnswer) {
       console.log("Correct!");
