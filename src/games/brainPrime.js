@@ -6,15 +6,15 @@ const log = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      return false;
+      return 'no';
     }
   }
-  return true;
+  return 'yes';
 };
 
 const answerQuestion = () => {
-  const question = random(1, 50);
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  const question = random(0, 100);
+  const correctAnswer = isPrime(question);
   return [question, correctAnswer];
 };
 
