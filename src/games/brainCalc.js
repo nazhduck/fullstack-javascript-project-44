@@ -1,26 +1,26 @@
-import start from "../index.js";
-import random from "../randomFunc.js";
+import start from '../index.js';
+import random from '../randomFunc.js';
 
-const signs = ["+", "-", "*"];
+const signs = ['+', '-', '*'];
 
-const log = "What is the result of the expression?";
+const log = 'What is the result of the expression?';
 
 const calcNumbers = (symbol, firstNumber, secondNumber) => {
-  const ittr = [];
-  if (symbol === "+") {
-    ittr.push(firstNumber + secondNumber);
-  } else if (symbol === "-") {
-    ittr.push(firstNumber - secondNumber);
-  } else if (symbol === "*") {
-    ittr.push(firstNumber * secondNumber);
+  const resultOfCalc = [];
+  if (symbol === '+') {
+    resultOfCalc.push(firstNumber + secondNumber);
+  } else if (symbol === '-') {
+    resultOfCalc.push(firstNumber - secondNumber);
+  } else if (symbol === '*') {
+    resultOfCalc.push(firstNumber * secondNumber);
   }
-  return ittr.join("");
+  return resultOfCalc.join('');
 };
 
 const answerQuestion = () => {
-  const sign = signs[random(0, 2)];
-  const firstNum = random();
-  const secondNum = random();
+  const sign = signs[random(0, signs.length - 1)];
+  const firstNum = random(0, 100);
+  const secondNum = random(0, 100);
 
   const question = `${firstNum} ${sign} ${secondNum}`;
   const correctAnswer = calcNumbers(sign, firstNum, secondNum);

@@ -1,34 +1,24 @@
-import start from "../index.js";
-import random from "../randomFunc.js";
+import start from '../index.js';
+import random from '../randomFunc.js';
 
-const log = "Find the greatest common divisor of given numbers.";
+const log = 'Find the greatest common divisor of given numbers.';
 
-const GCD = (firstNum, secondNum) => {
-  const firstNumGCD = [];
-  for (let i = 1; i <= firstNum; i += 1) {
-    firstNum % i === 0 ? firstNumGCD.push(i) : null;
+const getGreatestCommonDivisor = (firstItem, secondItem) => {
+  if (firstItem === 0 || secondItem === 0) {
+    return firstItem + secondItem;
   }
-
-  const secondNumGCD = [];
-  for (let i = 1; i <= secondNum; i += 1) {
-    secondNum % i === 0 ? secondNumGCD.push(i) : null;
+  if (firstItem > secondItem) {
+    return getGreatestCommonDivisor(firstItem - secondItem, secondItem);
   }
-
-  for (const subFirst of firstNumGCD.reverse()) {
-    for (const subSecond of secondNumGCD.reverse()) {
-      if (subFirst === subSecond) {
-        return subFirst;
-      }
-    }
-  }
+  return getGreatestCommonDivisor(firstItem, secondItem - firstItem);
 };
 
 const answerQuestion = () => {
-  const firstNum = random(1, 50);
-  const secondNum = random(1, 50);
+  const firstNum = random(0, 100);
+  const secondNum = random(0, 100);
 
   const question = `${firstNum} ${secondNum}`;
-  const correctAnswer = String(GCD(firstNum, secondNum));
+  const correctAnswer = String(getGreatestCommonDivisor(firstNum, secondNum));
 
   return [question, correctAnswer];
 };
