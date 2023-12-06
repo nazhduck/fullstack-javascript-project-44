@@ -1,7 +1,7 @@
 import start from '../index.js';
 import random from '../randomFunc.js';
 
-const log = `Answer "yes" if the number is even, otherwise answer "no".`;
+const log = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (num) => num % 2 === 0;
 
