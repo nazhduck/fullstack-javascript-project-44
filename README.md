@@ -3,90 +3,91 @@
 [![Actions Status](https://github.com/nazhduck/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nazhduck/fullstack-javascript-project-44/actions)  
 [![Maintainability](https://api.codeclimate.com/v1/badges/07d8ad6ef8e23fa6fd03/maintainability)](https://codeclimate.com/github/nazhduck/fullstack-javascript-project-44/maintainability)
 
-# Игры разума (JavaScript)
+# Brain Games (JavaScript)
 
-«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+"Brain Games" – a collection of five console games inspired by popular brain-boosting apps. Each game poses a series of questions that require correct answers. Get three correct answers and the game ends; get one wrong and the player has to replay the game.
 
-Игры:
+Games:
 
-- Определение чётного числа.
-- Калькулятор. Арифметические выражения, которые необходимо вычислить.
-- Определение наибольшего общего делителя.
-- Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-- Определение простого числа.
+- Even Or Odd
+- Calculator
+- Greatest Common Divisior
+- Arithmetic progression
+- Prime Number
 
-## Установка
+## Install
 
 ```javascript
+git clone
 make install
 ```
 
-## Игра: "Проверка на чётность"
+## "Even Or Odd"
 
-Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить "yes", если число чётное, или "no" — если нечётное.
+You see a random number. Answer "yes" if the number is even, otherwise answer "no".
 
-### Запуск игры
+### Launch
 
 ```javascript
 make brain-even
 ```
 
-### Пример игры
+### Example
 
 [![asciicast](https://asciinema.org/a/624150.svg)](https://asciinema.org/a/624150)
 
-## Игра: "Калькулятор"
+## "Calculator"
 
-Суть игры в следующем: пользователю показывается случайное математическое выражение, которое нужно вычислить и записать правильный ответ.
+Calculate the mathematical expression.
 
-### Запуск игры
+### Launch
 
 ```javascript
 make brain-calc
 ```
 
-### Пример игры
+### Example
 
 [![asciicast](https://asciinema.org/a/624156.svg)](https://asciinema.org/a/624156)
 
-## Игра "НОД"
+## "Greatest Common Divisior"
 
-Суть игры в следующем: пользователю показывается два случайных числа. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+Find the greatest common divisor of given numbers.
 
-### Запуск игры
+### Launch
 
 ```javascript
 make brain-gcd
 ```
 
-### Пример игры
+### Example
 
 [![asciicast](https://asciinema.org/a/624185.svg)](https://asciinema.org/a/624185)
 
-## Игра "Арифметическая прогрессия"
+## "Arithmetic Progression"
 
-Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
+ Find the missing number in the progression.
 
-### Запуск игры
+### Launch
 
 ```javascript
 make brain-progression
 ```
 
-### Пример игры
+### Example
 
 [![asciicast](https://asciinema.org/a/625192.svg)](https://asciinema.org/a/625192)
 
-## Игра "Простое ли число?"
+## "Prime Number"
 
-Игроку показывается число, и он должен опеределить: является ли это чило простым или нет.
+You see a random number. Answer "yes" if given number is prime. Otherwise answer "no".
 
-### Запуск игры
+### Launch
 
 ```javascript
 make brain-prime
 ```
 
-### Пример игры
+### Example
 
 [![asciicast](https://asciinema.org/a/625230.svg)](https://asciinema.org/a/625230)
