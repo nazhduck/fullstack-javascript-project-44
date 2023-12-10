@@ -1,5 +1,5 @@
 import start from '../index.js';
-import random from '../randomFunc.js';
+import random from '../getRandomInRange.js';
 
 const log = 'Find the greatest common divisor of given numbers.';
 
@@ -14,8 +14,8 @@ const getGreatestCommonDivisor = (firstItem, secondItem) => {
 };
 
 const answerQuestion = () => {
-  const firstNum = random(0, 100);
-  const secondNum = random(0, 100);
+  const firstNum = random(1, 100);
+  const secondNum = random(1, 100);
 
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = String(getGreatestCommonDivisor(firstNum, secondNum));

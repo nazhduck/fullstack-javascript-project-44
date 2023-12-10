@@ -1,5 +1,5 @@
 import start from '../index.js';
-import random from '../randomFunc.js';
+import random from '../getRandomInRange.js';
 
 const log = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

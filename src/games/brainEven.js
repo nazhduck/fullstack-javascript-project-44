@@ -1,5 +1,5 @@
 import start from '../index.js';
-import random from '../randomFunc.js';
+import random from '../getRandomInRange.js';
 
 const log = 'Answer "yes" if the number is even, otherwise answer "no".';
 
