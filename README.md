@@ -5,7 +5,7 @@
 
 # Brain Games (JavaScript)
 
-"Brain Games" – a collection of five console games inspired by popular brain-boosting apps. Each game poses a series of questions that require correct answers. Get three correct answers and the game ends; get one wrong and the player has to replay the game.
+"Brain Games" – a collection of five console games inspired by popular brain-boosting apps. Each game poses a series of questions that require correct answers. Get three correct answers and the game ends; make one mistake and you have to replay the game.
 
 Games:
 
