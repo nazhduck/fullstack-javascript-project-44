@@ -66,7 +66,7 @@ make brain-gcd
 
 ## "Arithmetic Progression"
 
- Find the missing number in the progression.
+Find the missing number in the progression.
 
 ### Launch
 

@@ -3,7 +3,7 @@ import random from '../getRandomInRange.js';
 
 const signs = ['+', '-', '*'];
 
-const log = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 
 const calcNumbers = (symbol, firstNumber, secondNumber) => {
   const resultOfCalc = [];
@@ -17,7 +17,7 @@ const calcNumbers = (symbol, firstNumber, secondNumber) => {
   return resultOfCalc.join('');
 };
 
-const answerQuestion = () => {
+const generateRound = () => {
   const sign = signs[random(0, signs.length - 1)];
   const firstNum = random(0, 100);
   const secondNum = random(0, 100);
@@ -28,4 +28,4 @@ const answerQuestion = () => {
   return [question, correctAnswer];
 };
 
-export default () => start(log, answerQuestion);
+export default () => start(rules, generateRound);
