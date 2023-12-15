@@ -1,6 +1,6 @@
 import start from '../index.js';
 import random from '../getRandomInRange.js';
-import isTrueOrFalse from './isTrueOrFalse.js';
+import isTrueOrFalse from '../isTrueOrFalse.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
