@@ -16,9 +16,10 @@ const getProgression = (lengthOfProgression) => {
   const stepOfProgression = random(1, 10);
   const progression = generateProgression(currentNumber, stepOfProgression, lengthOfProgression);
   const randomResult = random(0, progression.length - 1);
-  const correctAnswer = progression[randomResult];
+  const correctAnswer = String(progression[randomResult]);
   progression[randomResult] = '..';
-  return [progression.join(' '), String(correctAnswer)];
+  const question = progression.join(' ');
+  return [question, correctAnswer];
 };
 
 const generateRound = () => {

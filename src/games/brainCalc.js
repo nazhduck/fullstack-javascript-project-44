@@ -5,7 +5,7 @@ const signs = ['+', '-', '*'];
 
 const rules = 'What is the result of the expression?';
 
-const calcNumbers = (symbol, firstNumber, secondNumber) => {
+const calcExpression = (symbol, firstNumber, secondNumber) => {
   const resultOfCalc = [];
   if (symbol === '+') {
     resultOfCalc.push(firstNumber + secondNumber);
@@ -23,7 +23,7 @@ const generateRound = () => {
   const secondNum = random(0, 100);
 
   const question = `${firstNum} ${sign} ${secondNum}`;
-  const correctAnswer = calcNumbers(sign, firstNum, secondNum);
+  const correctAnswer = calcExpression(sign, firstNum, secondNum);
 
   return [question, correctAnswer];
 };
